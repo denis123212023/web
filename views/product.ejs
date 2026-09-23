@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корм Royal Canin для собак - Пушистик</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fragments/footer.html">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Навигация -->
+    <div id="nav-bar"></div>
+    <%- include('fragments/nav-bar') %>
+
+
+        <div class="container mt-5">
+            <!-- Хлебные крошки -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Собаки</a></li>
+                    <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Корма</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <%= product.card_name %>
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="row mt-4">
+                <!-- Галерея товара -->
+                <div class="col-md-6 mb-4 product-gallery">
+                    <img src=<%=product.img_src %>
+                    alt="Корм Royal Canin" class="img-fluid shadow-sm">
+
+                </div>
+
+                <!-- Информация о товаре -->
+                <div class="col-md-6">
+                    <div class="product-details">
+                        <h2 class="fw-bold mb-3">
+                            <%= product.card_name %>
+                        </h2>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="text-warning me-2">★★★★★</span>
+                            <a href="#" class="text-muted text-decoration-none small">15 отзывов</a>
+                        </div>
+
+                        <h3 class="price display-6 mb-4">
+                            <%= product.price %>
+                        </h3>
+
+                        <p class="text-muted">
+                            Полнорационный сухой корм для взрослых собак средних размеров (весом от 11 до 25 кг) в
+                            возрасте
+                            от 12 месяцев до 7 лет. Обеспечивает поддержание идеального веса и здоровое пищеварение.
+                        </p>
+
+
+
+                        <div class="d-flex gap-3 mb-4">
+                            <input id="unitinput" type="number" class="form-control text-center" value="1"
+                                style="width: 80px;" min="1">
+                            <button class="btn btn-primary flex-grow-1 btn-lg" onClick="onBuy()">Добавить в
+                                корзину</button>
+                        </div>
+
+                        <div class="card border-0 bg-light">
+                            <div class="card-body small">
+                                <p class="mb-1">🚚 <strong>Доставка:</strong> Завтра, от 200 ₽ (бесплатно от 3000 ₽)</p>
+                                <p class="mb-0">🔄 <strong>Возврат:</strong> 14 дней на проверку товара</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Описание и характеристики -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs mb-3" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-dark fw-bold" id="desc-tab" data-bs-toggle="tab"
+                                data-bs-target="#desc" type="button" role="tab">Описание</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark fw-bold" id="specs-tab" data-bs-toggle="tab"
+                                data-bs-target="#specs" type="button" role="tab">Характеристики</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content bg-white p-4 rounded shadow-sm" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                            <p>
+                                <%= product.card_name %>
+                            </p>
+                            <ul>
+                                <li>Естественная защита организма</li>
+                                <li>Высокая усвояемость</li>
+                                <li>Здоровая кожа и шерсть</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="specs" role="tabpanel">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th>Бренд</th>
+                                        <td>Royal Canin</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Тип корма</th>
+                                        <td>Сухой</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Возраст животного</th>
+                                        <td>Взрослые (1-7 лет)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Размер породы</th>
+                                        <td>Средние породы</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <div id="footer"></div>
+        <%- include('fragments/footer') %>
+
+
+            <!-- Bootstrap JS (bundle contains popper.js) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <script>
+                function init() {
+                    emailjs.init({
+                        publicKey: "b-b0i0jaECQdD07E5",
+                    });
+                    console.log("page loaded")
+                };
+                init()
+                function onBuy() {
+                    var price = <%=product.price %>
+                    var units = parseInt($("#unitinput").val())
+                    emailjs.send("service_wlomtsi", "template_4v0e5z3", {
+                        order_id: <%=product.id %>,
+                        img_src: "<%=product.img_src %>",
+                        name: "<%=product.card_name %>",
+                        units: units,
+                        price: price,
+                        cost: price*units,
+                        email: "lazkodenis1233212@gmail.com"
+                    });
+                }
+            </script>
+
+
+</body>
+
+</html>

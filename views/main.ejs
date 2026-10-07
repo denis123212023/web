@@ -6,24 +6,243 @@
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8205ba8590.js" crossorigin="anonymous"></script>
 
 
 </head>
 
-<body class="bg-slate-200 aspect-16/9 flex">
+<body class="bg-slate-200  flex pt-2">
+  <div class="container flex-col flex w-full 2xl:w-[1330px] mx-auto">
+    <!-- footer -->
+    <div class="bg-neutral-50 h-max flex-col flex px-[15px] rounded-t-xl  p-2 w-full ">
+      <div class=" h-max flex flex-col rounded-xl">
+        <div class="flex flex-row rounded-md items-center  justify-between mb-2">
+          <div class=" flex">
+            <!-- Hotline + номер -->
+            <div class="bg-slate-200 p-2 rounded-md ">
+              Hotline 24/7
+            </div>
+            <div class="font-bold p-2">
+              (025) 3886 25 16
+            </div>
+          </div>
+          <!-- Hotline + номер -->
+          <div class=" flex gap-x-4">
+            <div>
+              Выставить товар
+            </div>
+            <div>
+              Отследить посылку
+            </div>
+            <div>
+              Выбор языка
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-x-4 h-16 justify-between">
+          <div class="flex">
+            <!-- Лого -->
+            <div>
+              <img src="img\logo.png">
+            </div>
+            <!-- Навигация -->
+            <div class="flex font-bold">
+              <div class="p-4 rounded-xl hover:bg-blue-300 hover:text-lg duration-300 transition    ">Главная <i
+                  class="fa-solid fa-chevron-down"></i></div>
+              <!--  -->
 
-  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-  <!--
-  This example requires updating your template:
+            </div>
+            <div class="flex font-bold">
+              <div class="p-4 rounded-xl hover:bg-blue-300 hover:text-lg duration-300 transition    ">Страницы <i
+                  class="fa-solid fa-chevron-down"></i></div>
+              <!--  -->
 
-  ```
-  <html class="h-full bg-gray-900">
-  <body class="h-full">
-  ```
--->
-  <div class="container bg-red-200 h-10 flex-col flex mx-auto w-full 2xl:w-[1330px] px-[15px]">
-    <div class="bg-green-900 h-10 flex"></div>
-  </div>
+            </div>
+            <div class="flex font-bold">
+              <div class="p-4 rounded-xl hover:bg-blue-300 hover:text-lg duration-300 transition    ">Продукты <i
+                  class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="flex font-bold">
+                <div class="p-4 rounded-xl hover:bg-blue-300 hover:text-lg duration-300 transition    ">Поддержка </div>
+              </div>
+
+              <!--  -->
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="gap-x-1 flex ">
+              <div class=" flex p-4 size-[40px] rounded-[50%] bg-slate-200 items-center justify-center self-center"><i
+                  class="fa-solid fa-thumbs-up"></i></div>
+              <div class=" flex p-4 size-[40px] rounded-[50%] bg-slate-200 items-center justify-center self-center"><i
+                  class="fa-solid fa-bookmark"></i></div>
+              <div class=" flex p-4 size-[40px] rounded-[50%] bg-slate-200 items-center justify-center self-center"><i
+                  class="fa-solid fa-user"></i></div>
+            </div>
+            <div class="flex-col pl-2">
+              <div>Welcome</div>
+              <div class="font-bold">log in / Register</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- search -->
+    <div class=" bg-lime-600 h-[75px]  flex  px-[15px] rounded-b-xl p-2 items-center flex-row">
+      <div class="w-2/5 h-[45px] bg-neutral-50 rounded-full flex items-center flex-row ">
+        <div
+          class="bg-neutral-200 h-full overflow-hidden rounded-l-full w-2/6 flex text-center pl-3 font-bold items-center text-sm">
+          All Categories <i class="fa-solid fa-chevron-down pl-3"></i></div>
+        <div class="text-gray-400 text-xs items-center pl-4">Search anything...</div>
+      </div>
+      <div class="flex items-center gap-[5vw]">
+        <div class="text-neutral-50 px-5 font-bold">free shipping over $199</div>
+        <div class="text-neutral-50  font-bold">30 days money back</div>
+        <div class="text-neutral-50  font-bold">100% secure payment</div>
+      </div>
+    </div>
+    <!-- mini catalog  -->
+    <div class="flex flex-row h-[447px] w-full pt-3 gap-x-4">
+      <!-- Банеры -->
+      <div class="bg-neutral-50 h-full w-1/4 rounded-xl"> 
+
+      </div>
+
+      <div class=" h-full w-2/4 flex flex-col gap-y-3">
+        <div class="w-full h-3/4 bg-slate-400 rounded-xl"></div>
+        <div class="flex flex-row w-full h-1/4  rounded-xl gap-x-3">
+          <div class="h-full w-1/2 bg-neutral-50 rounded-xl"></div>
+          <div class="h-full w-1/2 bg-neutral-50 rounded-xl"></div>
+        </div>
+      </div>
+
+      <div class=" h-full w-1/4 rounded-xl flex flex-col gap-y-3"> 
+        <div class="h-1/2 w-full bg-neutral-50 rounded-xl"></div>
+        <div class="h-1/2 w-full bg-neutral-50 rounded-xl"></div>
+      </div>
+    </div>
+
+    <div class="h-[266px] w-full gap-x-4  flex flex-row mt-8">
+      <div class="w-1/2 h-full bg-neutral-50 rounded-xl"></div>
+      <div class="w-1/2 h-full bg-neutral-50 rounded-xl"></div>
+
+    </div>
+    <main class="grid grid-cols-1 gap-2 pt-3 xl:grid-cols-3">
+      <section class="rounded-xl bg-white p-6">
+        <div class="mb-6 flex items-center justify-between">
+          <h2 class="font-bold uppercase">Audios &amp; Cameras</h2>
+          <a href="/catalog" class="text-sm text-gray-500 hover:text-black">View All</a>
+        </div>
+        <a href="/catalog" class="relative flex h-48 overflow-hidden rounded-xl bg-blue-950 p-6 text-white">
+          <div class="z-10 flex flex-col text-sm font-bold leading-6">
+            <span>Best</span><span>Speaker</span><span>2023</span>
+          </div>
+          <div class="absolute right-8 top-7 flex h-44 w-36 flex-col items-center">
+            <div class="z-10 h-8 w-28 rounded-full border-4 border-slate-500 bg-slate-700"></div>
+            <div class="-mt-2 flex h-36 w-36 items-center justify-center rounded-b-[3rem] rounded-t-[2rem] border border-slate-500 bg-gradient-to-b from-slate-500 via-slate-900 to-black">
+              <i class="fa-solid fa-volume-high text-4xl text-sky-300"></i>
+            </div>
+          </div>
+          <span class="absolute bottom-0 right-4 text-6xl font-black text-white/10">HARMAN</span>
+        </a>
+        <div class="my-6 border-t border-gray-200"></div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-volume-high text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Speaker</span><span class="mt-1 text-sm text-gray-500">12 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-camera text-4xl text-slate-700"></i></span>
+            <span class="font-bold">DSLR Camera</span><span class="mt-1 text-sm text-gray-500">9 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-headphones text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Earbuds</span><span class="mt-1 text-sm text-gray-500">5 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-microphone text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Microphone</span><span class="mt-1 text-sm text-gray-500">12 Items</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="rounded-xl bg-white p-6">
+        <div class="mb-6 flex items-center justify-between">
+          <h2 class="font-bold uppercase">Gaming</h2>
+          <a href="/catalog" class="text-sm text-gray-500 hover:text-black">View All</a>
+        </div>
+        <a href="/catalog" class="relative flex h-48 overflow-hidden rounded-xl bg-slate-200 p-6 text-slate-900">
+          <div class="z-10 flex flex-col text-sm font-bold uppercase leading-6">
+            <span>Wireless</span><span>RGB Gaming</span><span>Mouse</span>
+          </div>
+          <i class="fa-solid fa-computer-mouse absolute bottom-4 right-20 z-10 text-7xl text-slate-800"></i>
+          <i class="fa-solid fa-keyboard absolute -bottom-3 -right-3 rotate-[-12deg] text-9xl text-slate-700"></i>
+          <span class="absolute bottom-0 left-4 text-6xl font-black text-slate-300">LOGI</span>
+        </a>
+        <div class="my-6 border-t border-gray-200"></div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-display text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Monitors</span><span class="mt-1 text-sm text-gray-500">28 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-chair text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Chair</span><span class="mt-1 text-sm text-gray-500">12 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-gamepad text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Controller</span><span class="mt-1 text-sm text-gray-500">9 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-keyboard text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Keyboards</span><span class="mt-1 text-sm text-gray-500">30 Items</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="rounded-xl bg-white p-6">
+        <div class="mb-6 flex items-center justify-between">
+          <h2 class="font-bold uppercase">Office Equipments</h2>
+          <a href="/catalog" class="text-sm text-gray-500 hover:text-black">View All</a>
+        </div>
+        <a href="/catalog" class="relative flex h-48 flex-col items-center overflow-hidden rounded-xl bg-gradient-to-b from-zinc-800 to-zinc-600 p-6 text-white">
+          <span class="z-10 text-xs text-gray-300">Home Theater 4k</span>
+          <span class="z-10 text-2xl font-bold">Laser Projector</span>
+          <div class="absolute bottom-0 flex h-24 w-4/5 items-center justify-center rounded-t-3xl bg-gradient-to-b from-zinc-500 to-black">
+            <span class="flex size-16 items-center justify-center rounded-full border-8 border-zinc-700 bg-slate-900"><i class="fa-solid fa-circle text-xl text-violet-300"></i></span>
+          </div>
+        </a>
+        <div class="my-6 border-t border-gray-200"></div>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-print text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Printers</span><span class="mt-1 text-sm text-gray-500">9 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-wifi text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Network</span><span class="mt-1 text-sm text-gray-500">90 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-video text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Security</span><span class="mt-1 text-sm text-gray-500">12 Items</span>
+          </a>
+          <a href="/catalog" class="flex flex-col items-center text-center">
+            <span class="mb-3 flex size-28 items-center justify-center rounded-full bg-slate-200"><i class="fa-solid fa-video text-4xl text-slate-700"></i></span>
+            <span class="font-bold">Projectors</span><span class="mt-1 text-sm text-gray-500">12 Items</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    
+
+    </div>
+
+
+
+
+
 
 </body>
 

@@ -17,7 +17,7 @@ app.listen(port, async () => {
     const data = await fs.readFile(filePath, 'utf8')
     json_products = JSON.parse(data);
 
-});@
+});
 
 
 app.get('/', async (req, res) => {

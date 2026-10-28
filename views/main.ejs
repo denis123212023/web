@@ -1,173 +1,203 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketplace</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/8205ba8590.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body class="min-h-screen bg-slate-200 text-slate-800">
-    <div class="mx-auto w-full max-w-[1320px] px-2 py-2">
-      <header class="overflow-hidden rounded-t-xl bg-white shadow-sm">
-        <div class="flex flex-col gap-3 border-b border-slate-200 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex items-center gap-3 text-sm">
-            <span class="rounded-md bg-slate-200 px-3 py-2 font-medium">Hotline 24/7</span>
-            <span class="font-bold">(025) 3886 25 16</span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8205ba8590.js" crossorigin="anonymous"></script>
+</head>
 
-          <nav class="flex flex-wrap items-center gap-4 text-sm text-slate-700">
-            <a href="#" class="transition hover:text-slate-900">Выставить товар</a>
-            <a href="#" class="transition hover:text-slate-900">Отследить посылку</a>
-            <a href="#" class="transition hover:text-slate-900">Выбор языка</a>
+<body class="min-h-screen bg-slate-200 text-slate-800">
+  <div class="mx-auto w-full max-w-[1320px] px-2 py-2">
+    <header class="overflow-hidden rounded-t-xl bg-white shadow-sm">
+      <div
+        class="flex flex-col gap-3 border-b border-slate-200 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex items-center gap-3 text-sm">
+          <span class="rounded-md bg-slate-200 px-3 py-2 font-medium">Hotline 24/7</span>
+          <span class="font-bold">(025) 3886 25 16</span>
+        </div>
+
+        <nav class="flex flex-wrap items-center gap-4 text-sm text-slate-700">
+          <a href="#" class="transition hover:text-slate-900">Выставить товар</a>
+          <a href="#" class="transition hover:text-slate-900">Отследить посылку</a>
+          <a href="#" class="transition hover:text-slate-900">Выбор языка</a>
+        </nav>
+      </div>
+
+      <div class="flex flex-col gap-5 px-4 py-4 lg:flex-row lg:items-center lg:justify-between">
+        <div class="flex flex-wrap items-center gap-6">
+          <a href="#" class="block">
+            <img src="/img/logo.png" alt="logo" class="h-12 w-auto" />
+          </a>
+
+          <nav class="flex flex-wrap items-center gap-1 font-semibold text-slate-700">
+            <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Главная <i
+                class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
+            <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Страницы <i
+                class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
+            <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Продукты <i
+                class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
+            <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Поддержка</a>
           </nav>
         </div>
 
-        <div class="flex flex-col gap-5 px-4 py-4 lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex flex-wrap items-center gap-6">
-            <a href="#" class="block">
-              <img src="/img/logo.png" alt="logo" class="h-12 w-auto" />
-            </a>
-
-            <nav class="flex flex-wrap items-center gap-1 font-semibold text-slate-700">
-              <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Главная <i class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
-              <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Страницы <i class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
-              <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Продукты <i class="fa-solid fa-chevron-down ml-2 text-xs"></i></a>
-              <a href="#" class="rounded-xl px-4 py-3 transition hover:bg-blue-100 hover:text-slate-900">Поддержка</a>
-            </nav>
+        <div class="flex items-center gap-3 self-start lg:self-auto">
+          <div class="flex items-center gap-2">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i
+                class="fa-solid fa-thumbs-up"></i></span>
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i
+                class="fa-solid fa-bookmark"></i></span>
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i
+                class="fa-solid fa-user"></i></span>
           </div>
-
-          <div class="flex items-center gap-3 self-start lg:self-auto">
-            <div class="flex items-center gap-2">
-              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i class="fa-solid fa-thumbs-up"></i></span>
-              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i class="fa-solid fa-bookmark"></i></span>
-              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-700"><i class="fa-solid fa-user"></i></span>
-            </div>
-            <div class="text-sm">
-              <div class="text-slate-500">Welcome</div>
-              <div class="font-bold">log in / Register</div>
-            </div>
+          <div class="text-sm">
+            <div class="text-slate-500">Welcome</div>
+            <div class="font-bold">log in / Register</div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <div class="flex flex-col gap-4 rounded-b-xl bg-lime-600 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
-        <div class="flex h-12 w-full max-w-[440px] overflow-hidden rounded-full bg-white shadow-sm">
-          <div class="flex w-2/5 items-center justify-center gap-2 bg-slate-200 px-3 text-sm font-semibold text-slate-700">
-            <span>All Categories</span>
-            <i class="fa-solid fa-chevron-down text-xs"></i>
-          </div>
-          <div class="flex flex-1 items-center pl-5 text-sm text-slate-400">Search anything...</div>
+    <div class="flex flex-col gap-4 rounded-b-xl bg-lime-600 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
+      <div class="flex h-12 w-full max-w-[440px] overflow-hidden rounded-full bg-white shadow-sm">
+        <div
+          class="flex w-2/5 items-center justify-center gap-2 bg-slate-200 px-3 text-sm font-semibold text-slate-700">
+          <span>All Categories</span>
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </div>
+        <div class="flex flex-1 items-center pl-5 text-sm text-slate-400">Search anything...</div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-bold text-white">
+        <span>free shipping over $199</span>
+        <span>30 days money back</span>
+        <span>100% secure payment</span>
+      </div>
+    </div>
+
+    <section class="mt-4 grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)_240px]">
+      <aside class="rounded-xl bg-white p-4 shadow-sm">
+        <div class="mb-4 text-lg font-bold uppercase tracking-wide">Browse</div>
+        <div class="space-y-3 text-sm text-slate-700">
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100">
+            <span>Smartphones</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100">
+            <span>Laptops</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Audio</span><i
+              class="fa-solid fa-chevron-right text-xs"></i></div>
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Gaming</span><i
+              class="fa-solid fa-chevron-right text-xs"></i></div>
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Office</span><i
+              class="fa-solid fa-chevron-right text-xs"></i></div>
+          <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100">
+            <span>Accessories</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
+        </div>
+      </aside>
+
+      <div class="flex flex-col gap-4">
+        <div class="rounded-xl bg-slate-300">
+          <img src="/img/placeholder-624px-x-317px.jpg" alt="promo"
+            class="h-[320px] w-full rounded-xl object-center object-cover transition-shadow duration-300 hover:shadow-xl" />
         </div>
 
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-bold text-white">
-          <span>free shipping over $199</span>
-          <span>30 days money back</span>
-          <span>100% secure payment</span>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-xl bg-white shadow-sm">
+            <img src="/img/placeholder-306px-x-105px-1.jpg" alt="promo card"
+              class="h-[120px] w-full rounded-xl object-cover transition-shadow duration-300 hover:shadow-xl" />
+          </div>
+          <div class="rounded-xl bg-white shadow-sm">
+            <img src="/img/placeholder-306px-x-105px-2.jpg" alt="promo card"
+              class="h-[120px] w-full rounded-xl object-cover transition-shadow duration-300 hover:shadow-xl" />
+          </div>
         </div>
       </div>
 
-      <section class="mt-4 grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)_240px]">
-        <aside class="rounded-xl bg-white p-4 shadow-sm">
-          <div class="mb-4 text-lg font-bold uppercase tracking-wide">Browse</div>
-          <div class="space-y-3 text-sm text-slate-700">
-            <div class="flex items-center justify-between rounded-lg bg-slate-100 px-3 py-2.5"><span>Smartphones</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-            <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Laptops</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-            <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Audio</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-            <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Gaming</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-            <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Office</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-            <div class="flex items-center justify-between rounded-lg px-3 py-2.5 hover:bg-slate-100"><span>Accessories</span><i class="fa-solid fa-chevron-right text-xs"></i></div>
-          </div>
-        </aside>
+      <div class="flex flex-col gap-4">
+        <div class="rounded-xl bg-white shadow-sm">
+          <img src="/img/placeholder-312px-x-211px-1.jpg" alt="side promo"
+            class="h-[190px] w-full rounded-xl object-cover transition-shadow duration-300 hover:shadow-xl" />
+        </div>
+        <div class="rounded-xl bg-white shadow-sm">
+          <img src="/img/placeholder-312px-x-211px-2.jpg" alt="side promo"
+            class="h-[190px] w-full rounded-xl object-cover transition-shadow duration-300 hover:shadow-xl" />
+        </div>
+      </div>
+    </section>
 
-        <div class="flex flex-col gap-4">
-          <div class="overflow-hidden rounded-xl bg-slate-300">
-            <img src="/img/placeholder-624px-x-317px.jpg" alt="promo" class="h-[320px] w-full object-center object-cover" />
-          </div>
-
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-              <img src="/img/placeholder-306px-x-105px-1.jpg" alt="promo card" class="h-[120px] w-full object-cover" />
-            </div>
-            <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-              <img src="/img/placeholder-306px-x-105px-2.jpg" alt="promo card" class="h-[120px] w-full object-cover" />
-            </div>
-          </div>
+    <section class="mt-8 grid gap-4 lg:grid-cols-2">
+      <div class="rounded-xl bg-white p-5 shadow-sm">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="text-xl font-bold uppercase">Smart gadgets</h2>
+          <a href="/catalog" class="text-sm text-slate-500 hover:text-slate-900">View All</a>
         </div>
 
-        <div class="flex flex-col gap-4">
-          <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-            <img src="/img/placeholder-312px-x-211px-1.jpg" alt="side promo" class="h-[190px] w-full object-cover" />
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-headphones"></i></div>
+            <div class="font-semibold">Earbuds</div>
+            <div class="text-sm text-slate-500">5 Items</div>
           </div>
-          <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-            <img src="/img/placeholder-312px-x-211px-2.jpg" alt="side promo" class="h-[190px] w-full object-cover" />
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-camera"></i></div>
+            <div class="font-semibold">Camera</div>
+            <div class="text-sm text-slate-500">9 Items</div>
           </div>
-        </div>
-      </section>
-
-      <section class="mt-8 grid gap-4 lg:grid-cols-2">
-        <div class="rounded-xl bg-white p-5 shadow-sm">
-          <div class="mb-4 flex items-center justify-between">
-            <h2 class="text-xl font-bold uppercase">Smart gadgets</h2>
-            <a href="/catalog" class="text-sm text-slate-500 hover:text-slate-900">View All</a>
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-volume-high"></i></div>
+            <div class="font-semibold">Speaker</div>
+            <div class="text-sm text-slate-500">12 Items</div>
           </div>
-
-          <div class="grid grid-cols-2 gap-4">
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-headphones"></i></div>
-              <div class="font-semibold">Earbuds</div>
-              <div class="text-sm text-slate-500">5 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-camera"></i></div>
-              <div class="font-semibold">Camera</div>
-              <div class="text-sm text-slate-500">9 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-volume-high"></i></div>
-              <div class="font-semibold">Speaker</div>
-              <div class="text-sm text-slate-500">12 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-microphone"></i></div>
-              <div class="font-semibold">Microphone</div>
-              <div class="text-sm text-slate-500">12 Items</div>
-            </div>
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-microphone"></i></div>
+            <div class="font-semibold">Microphone</div>
+            <div class="text-sm text-slate-500">12 Items</div>
           </div>
         </div>
+      </div>
 
-        <div class="rounded-xl bg-white p-5 shadow-sm">
-          <div class="mb-4 flex items-center justify-between">
-            <h2 class="text-xl font-bold uppercase">Gaming zone</h2>
-            <a href="/catalog" class="text-sm text-slate-500 hover:text-slate-900">View All</a>
+      <div class="rounded-xl bg-white p-5 shadow-sm">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="text-xl font-bold uppercase">Gaming zone</h2>
+          <a href="/catalog" class="text-sm text-slate-500 hover:text-slate-900">View All</a>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-display"></i></div>
+            <div class="font-semibold">Monitors</div>
+            <div class="text-sm text-slate-500">28 Items</div>
           </div>
-
-          <div class="grid grid-cols-2 gap-4">
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-display"></i></div>
-              <div class="font-semibold">Monitors</div>
-              <div class="text-sm text-slate-500">28 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-chair"></i></div>
-              <div class="font-semibold">Chairs</div>
-              <div class="text-sm text-slate-500">12 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-gamepad"></i></div>
-              <div class="font-semibold">Controller</div>
-              <div class="text-sm text-slate-500">9 Items</div>
-            </div>
-            <div class="rounded-xl bg-slate-50 p-4 text-center">
-              <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i class="fa-solid fa-keyboard"></i></div>
-              <div class="font-semibold">Keyboards</div>
-              <div class="text-sm text-slate-500">30 Items</div>
-            </div>
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-chair"></i></div>
+            <div class="font-semibold">Chairs</div>
+            <div class="text-sm text-slate-500">12 Items</div>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-gamepad"></i></div>
+            <div class="font-semibold">Controller</div>
+            <div class="text-sm text-slate-500">9 Items</div>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-4 text-center">
+            <div class="mb-3 flex h-24 items-center justify-center rounded-full bg-slate-200 text-3xl text-slate-700"><i
+                class="fa-solid fa-keyboard"></i></div>
+            <div class="font-semibold">Keyboards</div>
+            <div class="text-sm text-slate-500">30 Items</div>
           </div>
         </div>
-      </section>
-    </div>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
 </html>

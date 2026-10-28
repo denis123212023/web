@@ -25,6 +25,11 @@ app.get('/', async (req, res) => {
 
 
 });
+app.get('/hello', async (req, res) => {
+    res.render('hello');
+
+
+});
 
 app.get('/catalog', async (req, res) => {
     res.render('catalog', { json_products });
